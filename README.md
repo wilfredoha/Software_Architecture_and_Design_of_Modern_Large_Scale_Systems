@@ -62,6 +62,6 @@ La arquitectura de software es el **resultado** de la fase de diseño y la **ent
 
 ---
 
-[Anterior]()   [Siguiente](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/blob/main/01_System_Requirements_%26_Architectural_Drivers/01_Introduction_to_System_Design_%26_Architectural_Drivers.md)
+[Siguiente](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/blob/main/01_System_Requirements_%26_Architectural_Drivers/01_Introduction_to_System_Design_%26_Architectural_Drivers.md)
 
 [Menú Principal](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/tree/main)
