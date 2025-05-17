@@ -26,7 +26,7 @@ Los requisitos muchas veces provienen de personas no técnicas y son imprecisos.
 
 Además, el cliente rara vez sabe exactamente lo que necesita. Solo conoce el problema, por lo tanto, **plantear las preguntas correctas ya forma parte de la solución**.
 
-📌 Ejemplo: Un cliente solicita una app para hacer ride-sharing tipo “hitchhiking”. Las preguntas clave incluyen:
+📌 Ejemplo: Un cliente solicita una app para hacer ride-sharing. Las preguntas clave incluyen:
 
 - ¿Es en tiempo real o planificada?
 - ¿Móvil, escritorio o ambos?
