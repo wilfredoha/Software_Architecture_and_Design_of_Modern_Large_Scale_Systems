@@ -32,7 +32,7 @@ Un **actor** es cualquier usuario o sistema externo que interactúa con nuestro 
 
 Un **caso de uso** es un escenario específico en el que un actor utiliza el sistema para alcanzar un objetivo.
 
-**Ejemplos (servicio de ride-sharing tipo “hitchhiking”):**
+**Ejemplos (servicio de ride-sharing):**
 
 - Registro de un nuevo pasajero.
 - Registro de un nuevo conductor.
@@ -92,6 +92,8 @@ Aunque UML no se usa estrictamente en la industria, los **diagramas de secuencia
    - El conductor es notificado del nuevo crédito.
 
 > Este flujo será representado en un diagrama de secuencia (en una herramienta visual externa).
+
+![Sequence Diagram](images/diagrama_comonentes_ridesharing.png)
 
 ---
 
