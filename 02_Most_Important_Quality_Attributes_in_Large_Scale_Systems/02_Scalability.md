@@ -120,6 +120,6 @@ La escalabilidad no solo afecta el rendimiento del sistema, sino también la cap
 
 ---
 
-[Anterior](02_Most_Important_Quality_Attributes_in_Large_Scale_Systems/01_Performance.md)   [Siguiente](02_Most_Important_Quality_Attributes_in_Large_Scale_Systems/03_Availability_-_Introduction_&_Measurement.md)
+[Anterior](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/blob/main/02_Most_Important_Quality_Attributes_in_Large_Scale_Systems/01_Performance.md)   [Siguiente](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/blob/main/02_Most_Important_Quality_Attributes_in_Large_Scale_Systems/03_Availability_-_Introduction_%26_Measurement.md)
 
 [Menú Principal](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/tree/main)
