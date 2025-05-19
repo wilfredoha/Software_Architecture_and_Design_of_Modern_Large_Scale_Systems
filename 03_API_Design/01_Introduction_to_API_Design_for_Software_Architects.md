@@ -1,106 +1,101 @@
-# 📘 Introduction to API Design for Software Architects
+# 🧩 Introducción al Diseño de APIs para Arquitectos de Software
 
-## 🎯 Introduction and Motivation
+## 🎯 Objetivo de la Lección
 
-In this lecture, we explore the **design of Application Programming Interfaces (APIs)** for large-scale systems. A well-designed API acts as a **contract** between the system and its clients—enabling integration, scalability, and maintainability without exposing internal implementation details.
+En esta lección hablaremos sobre el diseño de la Interfaz de Programación de Aplicaciones (API) de un sistema. Comenzaremos con una introducción y la motivación detrás del diseño de APIs, luego abordaremos las categorías de APIs y finalizaremos con buenas prácticas y patrones para diseñar APIs eficaces.
 
-After gathering functional requirements, we view the system as a **black box** that exhibits behavior through a well-defined interface—our API.
+---
 
-## 🔍 What is an API?
+## 🔍 ¿Qué es una API y por qué necesitamos diseñarla?
 
-An **API (Application Programming Interface)** is a contract:
-* Between developers who **implement** the system.
-* And clients who **consume** it—such as:
-  * Web or mobile frontends,
-  * External systems,
-  * Internal services.
+Una vez capturados todos los requerimientos funcionales, podemos visualizar nuestro sistema como una **caja negra** con un **comportamiento definido** y una **interfaz clara**. Esta interfaz representa un **contrato** entre los ingenieros que desarrollan el sistema y las aplicaciones clientes que lo consumen.
 
-In large-scale systems, APIs are typically accessed **remotely over the network** and are crucial for integration across platforms and teams.
+Dado que esta interfaz será invocada por otras aplicaciones a través de la red, la llamamos **API (Application Programming Interface)**. En sistemas de gran escala, las APIs pueden ser utilizadas por:
 
-## 🧭 Categories of APIs
+* Aplicaciones frontend como móviles o navegadores web
+* Otros sistemas backend de empresas externas
+* Sistemas internos de nuestra organización
 
-### 🌐 Public APIs
-* Exposed to the general public.
-* Open for integration by any developer.
-* Recommended practices:
-  * Require registration.
-  * Monitor and control access.
-  * Blacklist malicious actors.
+Además, cada componente interno del sistema puede tener su propia API para interactuar con otros componentes.
 
-### 🏢 Private APIs
-* Used internally within an organization.
-* Enable collaboration and reuse across internal systems without public exposure.
+---
 
-### 🤝 Partner APIs
-* Exposed to third parties with **formal agreements** (e.g., paying customers or partners).
-* Controlled access via contractual relationships.
+## 🗂️ Tipos de APIs
 
-## ✅ Benefits of Defining an API
+Dependiendo del sistema y de los clientes que lo usan, las APIs se pueden clasificar en:
 
-* **Accelerates client development**—clients can integrate before implementation is complete.
-* **Decouples system design**—internal architecture can evolve independently.
-* **Improves scalability** and **interoperability**.
+### 🌐 APIs Públicas
+Están expuestas al público general. Cualquier desarrollador puede usarlas. Por lo general, se requiere un registro previo para mejorar el control, la seguridad y permitir la gestión de abusos.
 
-## 🧠 API Design Principles and Best Practices
+### 🏢 APIs Privadas
+Solo están disponibles internamente dentro de la organización. Permiten que otros equipos accedan al sistema sin exponerlo públicamente.
 
-### 🛡️ 1. Encapsulation & Abstraction
-* Internal implementation must remain **hidden**.
-* Clients should not require **knowledge of internal business logic**.
+### 🤝 APIs de Socios (Partner APIs)
+Son similares a las públicas, pero solo accesibles a empresas o usuarios con un acuerdo comercial con nosotros.
 
-### 🔗 2. Decoupling
-* Ensure clients are **not tightly coupled** to the internal structure.
-* Enables system evolution without breaking the API contract.
+---
 
-### 🎯 3. Simplicity & Usability
-* Easy to understand and hard to misuse.
-* Strategies:
-  * Provide **a single way** to perform each operation.
-  * Use **descriptive and consistent** naming conventions.
-  * Expose only **necessary** information.
+## ✅ Beneficios de un API Bien Definido
 
-### 🔁 4. Idempotency
-* An operation is idempotent if **repeating it yields the same result**.
-* Examples:
-  * ✅ `Update address` → idempotent.
-  * ❌ `Increase balance by $100` → not idempotent.
-* Idempotency is critical due to **network uncertainties** (e.g., retries, timeouts).
+* **Aceleración del desarrollo** por parte de los clientes sin necesidad de conocer detalles internos.
+* **Facilita la integración temprana**, incluso antes de que el sistema esté completamente implementado.
+* **Guía el diseño interno** al definir los puntos de entrada del sistema.
 
-### 📄 5. Pagination
-* Required for **large result sets** (e.g., emails, products).
-* Helps reduce payload size and improve **user experience**.
-* Common implementation:
-  * `limit` → number of items per page.
-  * `offset` → where to start in the dataset.
+---
 
-### ⏳ 6. Asynchronous APIs
-* Suitable for **long-running operations** (e.g., video processing, big data reports).
-* The client receives an **immediate response** with a tracking ID.
-* Client polls or subscribes for result status.
+## 🛠️ Buenas Prácticas y Patrones para Diseñar APIs
 
-### 🔢 7. API Versioning
-* APIs must support **versioning** to accommodate breaking changes.
-* Allows maintaining **multiple versions**:
-  * Example: `/v1/resource`, `/v2/resource`
-* Enables **graceful deprecation** of older versions.
+### 🔒 Encapsulamiento y Abstracción
+La API debe ocultar completamente la implementación interna. Si el cliente necesita conocer la lógica del negocio para usarla, la API está mal diseñada.
 
-## 🧾 Summary
+### 🔗 Desacoplamiento
+Debemos poder cambiar la implementación interna sin romper el contrato con los clientes existentes.
 
-In this lecture, we covered:
+### 🧠 Facilidad de Uso
+Una buena API debe ser:
+* Fácil de entender y usar
+* Difícil de usar incorrectamente
+* Coherente en toda su estructura
 
-* **What an API is** and its role as a **contract** for remote system interaction.
-* The **three categories** of APIs:
-  * Public,
-  * Private,
-  * Partner.
-* Key **best practices and patterns** for designing robust APIs:
-  * ✅ Encapsulation & abstraction
-  * ✅ Usability and simplicity
-  * ✅ Idempotent operations
-  * ✅ Pagination for large datasets
-  * ✅ Asynchronous handling for long tasks
-  * ✅ Explicit versioning
+Evita múltiples formas de hacer la misma operación y usa nombres descriptivos.
 
-In the next lectures, we will explore **common API styles and protocols** used in the industry today.
+### ♻️ Idempotencia
+Las operaciones idempotentes producen el mismo resultado si se ejecutan una o varias veces. Esto es esencial para sistemas distribuidos donde los mensajes pueden perderse o duplicarse.
+
+Ejemplos:
+* ✅ Actualizar una dirección → Idempotente
+* ❌ Aumentar el saldo en $100 → No idempotente
+
+### 📄 Paginación
+Permite devolver resultados en segmentos para evitar respuestas muy grandes. El cliente especifica:
+* Tamaño máximo de cada página
+* Offset o posición de inicio
+
+Esto mejora el rendimiento y la experiencia de usuario.
+
+### ⏳ Operaciones Asíncronas
+Para tareas de larga duración (como generación de reportes, análisis de big data o compresión de videos), es mejor usar APIs asíncronas. El cliente recibe una respuesta inmediata con un identificador para consultar el estado del proceso.
+
+### 🆎 Versionado de API
+Permite hacer cambios incompatibles sin afectar a los clientes existentes. Se pueden mantener varias versiones activas al mismo tiempo, descontinuando las anteriores de forma progresiva.
+
+---
+
+## 🧾 Resumen
+
+En esta lección:
+
+* Definimos una **API** como un contrato que permite a otros sistemas usar nuestro servicio sin conocer su implementación interna.
+* Identificamos tres tipos de APIs: **públicas**, **privadas** y **de socios**.
+* Exploramos buenas prácticas como:
+  - Encapsulamiento
+  - Facilidad de uso
+  - Idempotencia
+  - Paginación
+  - Operaciones asíncronas
+  - Versionado de API
+
+Estas prácticas son fundamentales para construir APIs robustas, escalables y fáciles de mantener.
 
 ---
 
