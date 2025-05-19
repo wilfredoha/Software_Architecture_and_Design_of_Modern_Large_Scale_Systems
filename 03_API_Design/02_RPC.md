@@ -10,6 +10,8 @@ Primero aprenderemos qué es y cómo funciona. Luego discutiremos sus beneficios
 
 Un **RPC** permite que una aplicación cliente ejecute una subrutina ubicada en un servidor remoto.
 
+![RPC](images/remote-call-procedure.png)
+
 Lo distintivo de este tipo de API es que esta invocación remota **se siente como una llamada a un método local**, desde el punto de vista del desarrollador.  
 A esta característica se le conoce como **transparencia local**.
 
@@ -85,6 +87,6 @@ Además, muchas implementaciones de RPC soportan **múltiples lenguajes de progr
 
 ---
 
-[Anterior](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/blob/main/03_API_Design/01_Introduction_to_API_Design_for_Software_Architects.md)   [Siguiente]()
+[Anterior](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/blob/main/03_API_Design/01_Introduction_to_API_Design_for_Software_Architects.md)   [Siguiente](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/blob/main/03_API_Design/03_REST_API.md)
 
 [Menú Principal](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/tree/main)
