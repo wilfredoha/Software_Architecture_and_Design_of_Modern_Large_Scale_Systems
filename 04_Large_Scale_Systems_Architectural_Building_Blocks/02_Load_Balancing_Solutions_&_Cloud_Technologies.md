@@ -25,8 +25,6 @@ Es conocido por su rendimiento, estabilidad, conjunto de funcionalidades y confi
 * Configuración simple
 * Amplio soporte de módulos
 
-📘 *Para un tutorial completo sobre cómo instalar, configurar y utilizar NGINX, consulta la documentación oficial.*
-
 ---
 
 ## ☁️ Soluciones de Balanceo de Carga en la Nube
@@ -41,8 +39,6 @@ Es conocido por su rendimiento, estabilidad, conjunto de funcionalidades y confi
 * **Network Load Balancer (L4)** – Ideal para balancear tráfico TCP y UDP.
 * **Gateway Load Balancer** – Ideal para desplegar, escalar y gestionar appliances virtuales de terceros.
 * **Classic Load Balancer (L4 y L7)** – Ideal para enrutar tráfico hacia instancias EC2.
-
-📘 *Para más información sobre ELB y políticas de autoescalado, consulta la [documentación oficial](https://docs.aws.amazon.com/elasticloadbalancing/).*
 
 ---
 
