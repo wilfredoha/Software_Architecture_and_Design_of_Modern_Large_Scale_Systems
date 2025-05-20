@@ -137,29 +137,22 @@ json
 ```
 
 ### 4. Asignar Métodos HTTP
-POST /users → crear nuevo usuario
-
-GET /users/123 → obtener info del usuario
-
-PUT /users/123 → actualizar perfil del usuario
-
-DELETE /users/123 → eliminar usuario
+- POST /users → crear nuevo usuario
+- GET /users/123 → obtener info del usuario
+- PUT /users/123 → actualizar perfil del usuario
+- DELETE /users/123 → eliminar usuario
 
 Repetir este proceso para todos los recursos.
 
-🏁 Conclusión
+## 🏁 Conclusión
 REST es un estilo arquitectónico enfocado en recursos.
-
-Utiliza HTTP y métodos estándar.
-
-Permite lograr sistemas escalables, disponibles y eficientes.
-
-Requiere organizar recursos con URIs significativas.
-
-Facilita la evolución y mantenimiento del sistema.
+- Utiliza HTTP y métodos estándar.
+- Permite lograr sistemas escalables, disponibles y eficientes.
+- Requiere organizar recursos con URIs significativas.
+- Facilita la evolución y mantenimiento del sistema.
 
 ---
 
-[Anterior]()   [Siguiente]()
+[Anterior](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/blob/main/03_API_Design/02_RPC.md)   [Siguiente](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/blob/main/04_Large_Scale_Systems_Architectural_Building_Blocks/01_DNS%2C_Load_Balancing_%26_GSLB.md)
 
 [Menú Principal](https://github.com/wilfredoha/Software_Architecture_and_Design_of_Modern_Large_Scale_Systems/tree/main)
