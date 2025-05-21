@@ -2,7 +2,7 @@
 
 ## 📌 Introducción
 
-En esta lección aprendimos sobre el **API Gateway**, un bloque fundamental de construcción arquitectónica y un patrón de diseño utilizado ampliamente por sistemas a gran escala en la industria. Antes de explorar sus ventajas, es clave comprender el problema que resuelve.
+En esta lección vamos a aprender sobre el **API Gateway**, un bloque fundamental de construcción arquitectónica y un patrón de diseño utilizado ampliamente por sistemas a gran escala en la industria. Antes de explorar sus ventajas, es clave comprender el problema que resuelve.
 
 Imaginemos que construimos una plataforma de **videos compartidos y transmisión**, donde los usuarios pueden subir, ver y comentar videos. Al principio, teníamos un solo servicio encargado de servir el frontend y manejar perfiles, suscripciones, notificaciones, almacenamiento, transmisión de videos y comentarios, además de la seguridad y autenticación.
 
