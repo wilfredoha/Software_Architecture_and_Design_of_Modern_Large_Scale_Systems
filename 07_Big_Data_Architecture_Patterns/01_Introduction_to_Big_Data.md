@@ -12,9 +12,7 @@ En esta lección, obtendremos una **introducción y motivación** para el proces
 
 * Demasiado grandes en tamaño,
 * Demasiado complejos en estructura,
-* O que llegan a nuestro sistema a una velocidad tan alta
-
-...que superan la capacidad de una aplicación tradicional para procesarlos con suficiente rapidez y generar valor.
+* O que llegan a nuestro sistema a una velocidad tan alta, que superan la capacidad de una aplicación tradicional para procesarlos con suficiente rapidez y generar valor.
 
 ---
 
